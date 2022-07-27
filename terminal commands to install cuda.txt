@@ -1,0 +1,10 @@
+# get gcc and g++ on the machine. Or check to see if they are installed
+sudo apt install build-essential  # installs gcc and g++
+gcc --version && g++ --version  # check for correct current install
+sudo apt install nvidia-cuda-toolkit  # install cuda
+nvcc --version  # check for correct install
+
+if needed for nvidia driver
+sudo apt install nvidia-driver-515 nvidia-dkms-515
+# need to reboot after
+nvidia-smi # to check for install
